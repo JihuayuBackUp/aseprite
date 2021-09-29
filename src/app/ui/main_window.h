@@ -69,6 +69,9 @@ namespace app {
 #ifdef ENABLE_UPDATER
     CheckUpdateDelegate* getCheckUpdateDelegate();
 #endif
+#if ENABLE_SENTRY
+    void updateConsentCheckbox();
+#endif
 
     void start();
     void showNotification(INotificationDelegate* del);
