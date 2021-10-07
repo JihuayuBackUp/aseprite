@@ -44,7 +44,7 @@ jobs:
       run: |
         cd build && ninja
     - name: upload
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: ${{ runner.os }}
         path: $PWD/bin/
