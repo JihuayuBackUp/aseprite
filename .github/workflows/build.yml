@@ -43,11 +43,12 @@ jobs:
       shell: bash
       run: |
         cd build && ninja
+        ls
     - name: upload
       uses: actions/upload-artifact@v2
       with:
         name: ${{ runner.os }}
-        path: $PWD/bin/
+        path: build/bin/
     - name: Running C++ Tests
       shell: bash
       run: |
